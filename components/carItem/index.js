@@ -2,6 +2,8 @@ import React from 'react'
 import { View, Text, ImageBackground } from 'react-native'
 import styles from './styles.js'
 
+import StyledButton from '../StyledButton/index.js'
+
 const CarItem = () => {
     return (
         <View style= {styles.carContainer}>
@@ -16,7 +18,20 @@ const CarItem = () => {
               <Text style = {styles.subtitle}>
                 Starting at a really high amount
               </Text>
-            </View>
+          </View>
+          <StyledButton
+           type = "primary" 
+           title="custom order"
+           onPress={()=>{
+            }}
+            />
+          <StyledButton
+           type = "secondary" 
+           title="existing inventory"
+           onPress={()=>{
+            }}
+            />
+
       </View>   
     )
 }
