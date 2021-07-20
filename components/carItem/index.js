@@ -4,33 +4,36 @@ import styles from './styles.js'
 
 import StyledButton from '../StyledButton/index.js'
 
-const CarItem = () => {
+const CarItem = ({title,subtitle, image}) => {
     return (
         <View style= {styles.carContainer}>
         <ImageBackground
-        source={require("../../assets/ModelX.jpeg")}
+        source={image}
         style ={styles.image}
         />
           <View style = {styles.titles}>
               <Text style = {styles.title}>
-                Model S
+                {title}
               </Text>
               <Text style = {styles.subtitle}>
-                Starting at a really high amount
+                {subtitle}
               </Text>
           </View>
-          <StyledButton
-           type = "primary" 
-           title="custom order"
-           onPress={()=>{
-            }}
-            />
-          <StyledButton
-           type = "secondary" 
-           title="existing inventory"
-           onPress={()=>{
-            }}
-            />
+          <View style={styles.buttonContainer}>
+            <StyledButton
+            type = "primary" 
+            title="custom order"
+            onPress={()=>{
+              }}
+              />
+            <StyledButton
+            type = "secondary" 
+            title="existing inventory"
+            onPress={()=>{
+              }}
+              />
+          </View>
+          
 
       </View>   
     )

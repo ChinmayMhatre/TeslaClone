@@ -31,6 +31,11 @@ const styles = StyleSheet.create({
       height:"100%",
       resizeMode:"cover",
       position:"absolute"
+    },
+    buttonContainer:{
+      width:"100%",
+      position:"absolute",
+      bottom:50
     }
   });
 
