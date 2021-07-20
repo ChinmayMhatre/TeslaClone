@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import CarItem from './components/carItem/index';
 import CarList from './components/CarList';
+import Header from './components/Header';
 
 import ModelX from './assets/ModelX.jpeg'
 import Model3 from './assets/Model3.jpeg'
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <View style={styles.container}>
     <StatusBar style="auto"/>
+      <Header/>
       <CarList/>
     </View>
   );
